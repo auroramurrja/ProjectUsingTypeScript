@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@*<div id="ts-example">
+    <br />
+    <button type="button" class="btn btn-primary btn-md" onclick="TSButton()">
+        Click Me
+    </button>
+</div>*@
+
+<electric-board backgroundcolor="orchid" displayComponentsName="true" rowCount="4" columnCount="4">
+
+    <electric-component slot="child" state="true" rowIndex="2" columnIndex="3" name="Lamp0" foreColor="black" onImageUrl="https://randomuser.me/api/portraits/men/3.jpg" offImageUrl="https://randomuser.me/api/portraits/men/1.jpg" moreHtmlData=""></electric-component>
+    <electric-component slot="child" state="false" rowIndex="3" columnIndex="4" name="TV" foreColor="orange" onImageUrl="https://randomuser.me/api/portraits/men/3.jpg" offImageUrl="https://randomuser.me/api/portraits/men/1.jpg" moreHtmlData=""></electric-component>
+
+    @*<h3>More Dom</h3>*@
+
+</electric-board>
+
+
